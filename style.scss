@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+:root{
+    --fs-12:12px;
+}
+*{
+    margin:0;
+    padding:0
+}
+ol,ul,li{
+    list-style:none
+}
+div[class^="deco_groups"]{
+    border:1px solid #ccc;
+    width:300px;
+    height:300px;
+    overflow:auto;
+    visibility:hidden;
+
+    ul{
+        li{
+            background-color:aqua;
+            width:280px;
+            padding:10px;
+            a{
+                
+                background:#d1a7a7;
+                font:normal var(--fs-12)s/1 #333;
+                border-radius:5px;
+                width:100%;
+            }
+            border:1px solid red
+        }
+    }
+
+    &.on{
+        visibility:visible;
+    }
+}

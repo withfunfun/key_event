@@ -1,0 +1,35 @@
+:root {
+  --fs-12:12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+div[class^=deco_groups] {
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+  visibility: hidden;
+}
+div[class^=deco_groups] ul li {
+  background-color: aqua;
+  width: 280px;
+  padding: 10px;
+  border: 1px solid red;
+}
+div[class^=deco_groups] ul li a {
+  background: #d1a7a7;
+  font: normal var(--fs-12) s/1 #333;
+  border-radius: 5px;
+  width: 100%;
+}
+div[class^=deco_groups].on {
+  visibility: visible;
+}/*# sourceMappingURL=style.css.map */
